@@ -1,1 +1,1 @@
-# Akaruidesu: akaruidesu.netlify.app
+# Akaruidesu: https://akaruidesu.netlify.app
