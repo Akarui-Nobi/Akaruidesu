@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("Backgrounds/Anime4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Courgette', cursive;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 90px;
+    font-weight: lighter;
+    color: #8d14ff;
+    animation: flicker 4s infinite alternate;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    padding: 50px;
+    font-size: 40px;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #8d14ff,
+        0 0 82px #8d14ff,
+        0 0 92px #8d14ff,
+        0 0 102px #8d14ff,
+        0 0 151px #8d14ff;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+
+@keyframes flicker1 {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #14e4ff,
+        0 0 80px #14e4ff,
+        0 0 90px #14e4ff,
+        0 0 100px #14e4ff,
+        0 0 150px #14e4ff;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #14e4ff,
+        0 0 0.8rem #14e4ff,
+        0 0 2.8rem #14e4ff,
+        inset 0 0 1.3rem #14e4ff;
+    
+    }
+
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }   
+}
+
+@keyframes flicker2 {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #ff14f3,
+        0 0 80px #ff14f3,
+        0 0 90px #ff14f3,
+        0 0 100px #ff14f3,
+        0 0 150px #ff14f3;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #ff14f3,
+        0 0 0.8rem #ff14f3,
+        0 0 2.8rem #ff14f3,
+        inset 0 0 1.3rem #ff14f3;
+    
+    }
+    
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }
+}
+
+.waifu:hover {
+    opacity: 2;
+    transform: scale(1);
+    animation: flicker1 1.5s infinite alternate;
+}
+
+.anime:hover {
+    opacity: 2;
+    transform: scale(1);
+    animation: flicker2 1.5s infinite alternate;
+}
+
+.waifu {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.102), rgba(0, 0, 0, 0.3)), url(Backgrounds/Anime1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem ridge #14e4ff;
+    padding: 200px;
+    border-radius: 2rem;
+    box-shadow:
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #14e4ff,
+        0 0 0.8rem #14e4ff,
+        0 0 2.8rem #14e4ff,
+        inset 0 0 1.3rem #14e4ff;
+    height: 200px;
+    color: #14e4ff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #14e4ff,
+        0 0 82px #14e4ff,
+        0 0 92px #14e4ff,
+        0 0 102px #14e4ff,
+        0 0 151px #14e4ff;
+    text-decoration: none;
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+
+.anime {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(Backgrounds/Anime2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem ridge #ff14f3;
+    padding: 200px;
+    border-radius: 2rem;
+    box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #ff14f3,
+        0 0 0.8rem #ff14f3,
+        0 0 2.8rem #ff14f3,
+        inset 0 0 1.3rem #ff14f3;
+    height: 200px;
+    color: #ff14f3;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ff14f3,
+        0 0 82px #ff14f3,
+        0 0 92px #ff14f3,
+        0 0 102px #ff14f3,
+        0 0 151px #ff14f3;
+    text-decoration: none;
+    opacity: 0.7;
+    transform: scale(0.95);
+}

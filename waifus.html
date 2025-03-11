@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifus</title>
+
+    <link rel="stylesheet" href="style-waifus.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="home">
+        <a class="links" href="index.html">Home</a>
+
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+        <a class="links" href="anime.html">Anime</a>
+    </div>
+
+    
+
+    <div class="big-container" id="newWaifu">
+        <div class="container">
+            <img class="p" src="Waifus/Josee.jpg">
+        
+            <div class="text">
+                <h1 class="n">Josee</h1>
+                <h1 class="a">(Josee to Tora to Sakana-tachi)</h1>
+                <h1 class="t">  Age: 24<br> 
+                                Birthday: 1997<br>
+                                Kumiko Yamamura
+                </h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <img class="p" src="Waifus/Marie Nobi.png">
+        
+            <div class="text">
+                <h1 class="n">Marie Nobi</h1>
+                <h1 class="a">(Kakumeiki Valvrave)</h1>
+                <h1 class="t">  Age: 16 - 17<br>
+                                Birthday: February 27th<br>
+                                Size: 144cm<br>
+                                Blood Type: B<br>
+                </h1>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="newWaifu" id="myBtn">Neue Waifu</button>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <form onsubmit="addWaifu(); return false">
+
+                <div>
+                    <label for="picturefield">Bild Einfügen</label>
+                    <input type="file" id="picturefield" name="picturefield">
+
+                    <label for="namefield">Name Einfügen</label>
+                    <input type="text" id="namefield" name="namefield">
+
+                    <label for="animefield">Anime Einfügen</label>
+                    <input type="text" id="animefield" name="animefield">
+
+                    <label for="textfield">Text Einfügen</label>
+                    <input type="text" id="textfield" name="textfield">
+                </div>
+
+                <button type="submit">
+                    Speichern
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script-waifus.js"></script>
+</body>
+</html>
